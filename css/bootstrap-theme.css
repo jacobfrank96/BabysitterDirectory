@@ -13,7 +13,7 @@
  * Copyright 2011-2015 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
-.btn-default,
+.btn-about,
 .btn-primary,
 .btn-success,
 .btn-info,
@@ -164,6 +164,7 @@ fieldset[disabled] .btn-primary.active {
   filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
   background-repeat: repeat-x;
   border-color: #ad2322;
+  text-decoration-color: white;
 }
 .btn-success:hover,
 .btn-success:focus {

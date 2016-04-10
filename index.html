@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Bootstrap 101 Template</title>
+    <title>Department of Anthropology</title>
 
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -17,6 +17,19 @@
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
+    <style>
+  .carousel-inner > .item > img,
+  .carousel-inner > .item > a > img {
+      width: 100%;
+      padding-left: 40px;
+      padding-right: 40px;
+      padding-bottom: 30px;
+      padding-top:40px;
+      margin: auto;
+  }
+
+  
+  </style>
   </head>
   <body>
     <nav class="navbar navbar-default">
@@ -29,43 +42,22 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#">Brand</a>
+          <a class="navbar-brand" href="#">Arts & Sciences | Washington University</a>
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav">
-            <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
-            <li><a href="#">Link</a></li>
-            <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
-              <ul class="dropdown-menu">
-                <li><a href="#">Action</a></li>
-                <li><a href="#">Another action</a></li>
-                <li><a href="#">Something else here</a></li>
-                <li role="separator" class="divider"></li>
-                <li><a href="#">Separated link</a></li>
-                <li role="separator" class="divider"></li>
-                <li><a href="#">One more separated link</a></li>
-              </ul>
-            </li>
+
           </ul>
-          <form class="navbar-form navbar-left" role="search">
-            <div class="form-group">
-              <input type="text" class="form-control" placeholder="Search">
-            </div>
-            <button type="submit" class="btn btn-default">Submit</button>
-          </form>
+
           <ul class="nav navbar-nav navbar-right">
-            <li><a href="#">Link</a></li>
-            <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
-              <ul class="dropdown-menu">
-                <li><a href="#">Action</a></li>
-                <li><a href="#">Another action</a></li>
-                <li><a href="#">Something else here</a></li>
-                <li role="separator" class="divider"></li>
-                <li><a href="#">Separated link</a></li>
+            <form class="navbar-form navbar-left" role="search">
+              <div class="form-group">
+                <input type="text" class="form-control" placeholder="Search">
+              </div>
+              <button type="submit" class="btn btn-default">Submit</button>
+            </form>
               </ul>
             </li>
           </ul>
@@ -74,28 +66,188 @@
     </nav>
 
 
-    <h1>Hello, world!</h1>
+    <h1>Department of Anthropology</h1>
 
     <!-- Standard button -->
-    <button type="button" class="btn btn-default">Default</button>
+    <!-- Split button -->
+<div class="btn-group">
+  <button type="button" class="btn btn-about"><a href="http://anthropology.artsci.wustl.edu/about">About</a></button>
+  <button type="button" class="btn btn-about dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    <span class="caret"></span>
+    <span class="sr-only">Toggle Dropdown</span>
+  </button>
+  <ul class="dropdown-menu">
+    <li><a href="http://anthropology.artsci.wustl.edu/news">Departmental News</a></li>
+    <li><a href="http://anthropology.artsci.wustl.edu/about/spotlights">Past Spotlights</a></li>
+    <li><a href="http://anthropology.artsci.wustl.edu/about/alumni_news">Alumni News</a></li>
+    <li><a href="http://anthropology.artsci.wustl.edu/newsletters">Annual Newsletters</a></li>
+    <li><a href="http://anthropology.artsci.wustl.edu/undergraduate/major/2015-awards">2015 Anthropology Awards</a></li>
+
+    <li role="separator" class="divider"></li>
+    <li><a href="http://anthropology.artsci.wustl.edu/contact">Contact Us</a></li>
+  </ul>
+</div>
+
+
 
     <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
-    <button type="button" class="btn btn-primary">Primary</button>
+
+    <div class="btn-group">
+    <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      People <span class="caret"></span>
+    </button>
+    <ul class="dropdown-menu">
+      <li><a href="http://anthropology.artsci.wustl.edu/people">Faculty</a></li>
+      <li><a href="http://anthropology.artsci.wustl.edu/people/adjunct-faculty">Adjunct Faculty</a></li>
+      <li><a href="http://anthropology.artsci.wustl.edu/people/emeritus-faculty">Emeritus Faculty</a></li>
+      <li><a href="http://anthropology.artsci.wustl.edu/people/post-doctoral-fellows">Post Doctoral Fellows</a></li>
+      <li><a href="http://anthropology.artsci.wustl.edu/people/research-associates">Research Associates</a></li>
+      <li><a href="http://anthropology.artsci.wustl.edu/people/graduate-students">Graduate Students</a></li>
+      <li><a href="http://anthropology.artsci.wustl.edu/people/staff">Staff</a></li>
+    </ul>
+  </div>
 
     <!-- Indicates a successful or positive action -->
-    <button type="button" class="btn btn-success">Success</button>
+    <div class="btn-group">
+  <button type="button" class="btn btn-success dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Undergraduate <span class="caret"></span>
+  </button>
+  <ul class="dropdown-menu">
+    <li><a href="http://anthropology.artsci.wustl.edu/undergraduate/research">Research</a></li>
+    <li><a href="http://anthropology.artsci.wustl.edu/undergraduate/honors">Honors</a></li>
+    <li><a href="http://anthropology.artsci.wustl.edu/undergraduate/major/global-education">Study Abroad</a></li>
+    <li><a href="http://anthropology.artsci.wustl.edu/undergraduate/medicine_society">Medicine & Society Program</a></li>
+    <li role="separator" class="divider"></li>
+    <li><a href="http://anthropology.artsci.wustl.edu/undergraduate/major">Major/Minor</a></li>
+    <li role="separator" class="divider"></li>
+    <li><a href="http://anthropology.artsci.wustl.edu/undergraduate/contacts">Questions</a></li>
+
+
+  </ul>
+</div>
 
     <!-- Contextual button for informational alert messages -->
-    <button type="button" class="btn btn-info">Info</button>
+    <div class="btn-group">
+      <button type="button" class="btn btn-success" ><a href="http://anthropology.artsci.wustl.edu/graduate">Graduate</a></button>
+      <button type="button" class="btn btn-success dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <span class="caret"></span>
+        <span class="sr-only">Toggle Dropdown</span>
+      </button>
+      <ul class="dropdown-menu">
+        <li><a href="http://anthropology.artsci.wustl.edu/graduate/archaeology">Archeology</a></li>
+        <li><a href="http://anthropology.artsci.wustl.edu/graduate/physical">Physical Anthropology</a></li>
+        <li><a href="http://anthropology.artsci.wustl.edu/graduate/sociocultural">Sociocultural Anthropology</a></li>
+        <li><a href="http://anthropology.artsci.wustl.edu/graduate/placement">Graduate Placement</a></li>
+        <li role="separator" class="divider"></li>
+        <li><a href="http://anthropology.artsci.wustl.edu/graduate/departmental-requirements">Departmental Requirements</a></li>
+        <li><a href="http://anthropology.artsci.wustl.edu/graduate/admissions">How to Apply</a></li>
+        <li><a href="http://anthropology.artsci.wustl.edu/graduate/funding">Financial Support</a></li>
+        <li><a href="http://anthropology.artsci.wustl.edu/graduate/resources">Resources</a></li>
+        <li role="separator" class="divider"></li>
+        <li><a href="http://anthropology.artsci.wustl.edu/graduate/admissions/ask">Questions</a></li>
+      </ul>
+    </div>
+
 
     <!-- Indicates caution should be taken with this action -->
-    <button type="button" class="btn btn-warning">Warning</button>
+    <button type="button" class="btn btn-warning"><a href="http://anthropology.artsci.wustl.edu/courses">Courses</a></button>
 
-    <!-- Indicates a dangerous or potentially negative action -->
-    <button type="button" class="btn btn-danger">Danger</button>
 
-    <!-- Deemphasize a button by making it look like a link while maintaining button behavior -->
-    <button type="button" class="btn btn-link">Link</button>
+
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+    <li data-target="#myCarousel" data-slide-to="1"></li>
+    <li data-target="#myCarousel" data-slide-to="2"></li>
+    <li data-target="#myCarousel" data-slide-to="3"></li>
+  </ol>
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner" role="listbox">
+    <div class="item active">
+      <img src="first.png" alt="first">
+      <div class="carousel-caption">
+        <h3>Undergraduate First Place:</h3>
+        <p>Alexander Lu. The Mengjia Longshan temple was built in 1738 by settlers from Fujian. In the midst of an increasingly modern Taipei, this temple preserves ancient cultural</p>
+      </div>
+    </div>
+
+    <div class="item">
+      <img src="gradfirst.png" alt="gradfirst">
+      <div class="carousel-caption">
+        <h3>Graduate First Place: </h3>
+        <p>Adrienne Strong. Men and Bao: Stone Town, Zanzibar. July 2014.</p>
+      </div>
+    </div>
+
+    <div class="item">
+      <img src="second.png" alt="Flower">
+      <div class="carousel-caption">
+        <h3>Graduate Second Place: </h3>
+        <p>Steven McPhee. Colliding Cultures: Traditional style Chinese boat against the modern Hong Kong skyline. Hong Kong, China. August 2014</p>
+      </div>
+    </div>
+
+    <div class="item">
+      <img src="third.png" alt="third">
+      <div class="carousel-caption">
+        <h3>Undergraduate Third Place:</h3>
+        <p>Rebecca Weiss. The terraced Lavaux Vineyards cover about 30 km of the hilly banks of Lake Geneva between Lausanne and Vevey.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Left and right controls -->
+  <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+
+<div class="container">
+<div class="row">
+
+</div>
+<div class="row">
+  <div class="col-md-4">
+  <h2>Upcoming events</h2>
+
+
+  <li class="list-group-item"> <a href="http://anthropology.artsci.wustl.edu/events/1512" > PB&Joy</a></li>
+  <li class="list-group-item"> <a href="http://anthropology.artsci.wustl.edu/events/1529" > Tea with a Professor</a></li>
+  <li class="list-group-item"> <a href="http://anthropology.artsci.wustl.edu/events/1532" > Honors Poster Session</a></li>
+
+
+
+  </div>
+
+  <div class="col-md-4">
+
+  <h2>Department News</h2>
+
+
+    <li class="list-group-item"> <a href="http://www.gf.org/about/fellowship/" >Glenn Stone awarded Guggenheim Fellowship</a></li>
+    <li class="list-group-item"> <a href="http://anthropology.artsci.wustl.edu/departmental-news/articles/1581" > 2016 Ralph Bunche Scholars awarded in Anthropology</a></li>
+    <li class="list-group-item"> <a href="http://anthropology.artsci.wustl.edu/departmental-news-sociocultural-anthropology/articles/1526" > John Bowen receives Dr. Jean Mayer Global Citizenship Award</a></li>
+
+
+  </div>
+  <div class="col-md-4">
+    <h2>Spotlight</h2>
+    <li class="list-group-item"> <a href="http://anthropology.artsci.wustl.edu/alumni-news-spotlights/articles/1565">Recent alumnus, Scott Rempel, matched to rural medicine program:</a>
+      <p>Scott Rempel graduated from Washington University in St. Louis in 2012 as an Anthropology major with a minor in Public Health.
+        <a href="http://anthropology.artsci.wustl.edu/alumni-news-spotlights/articles/1565">read more</a></p>
+    </li>
+
+  </div>
+</div>
+</div>
+
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>

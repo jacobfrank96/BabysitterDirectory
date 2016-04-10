@@ -1,5 +1,13 @@
 /*custom css goes here*/
 
 h1{
-  border: 10px solid red;
+  /*border: 1px solid red;*/
+  padding-left: 15px
+}
+
+h3{
+  position: static;
+}
+.row{
+  padding-bottom: 30px;
 }
